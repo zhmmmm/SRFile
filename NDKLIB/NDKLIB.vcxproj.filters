@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c36cf724-5d35-4e5c-ba07-9057e2922773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\socket">
+      <UniqueIdentifier>{02889760-0cf6-43f8-8190-a36f03b4c792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SOIL2">
+      <UniqueIdentifier>{5b03143a-8d74-4977-adbe-e4b96d378ac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sqlite">
+      <UniqueIdentifier>{9a87b356-0ba7-4a5a-a27d-ec2a8364c87b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\xml">
+      <UniqueIdentifier>{9f29548a-6a33-44cb-a3fe-e969cfffedec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\yuv">
+      <UniqueIdentifier>{1103f0c6-243c-4565-a964-06fa6f079ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{0caffa31-66e3-4dc5-b3c5-c49160949234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tools">
+      <UniqueIdentifier>{156d071c-e6a4-42fd-8ade-47c72923adff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\iconv">
+      <UniqueIdentifier>{37b65e37-82d4-45f2-bbab-cdf2b44fd222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guid">
+      <UniqueIdentifier>{2e4d2c39-15a9-448f-be80-5c1287905b4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\compare.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\compare_common.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\compare_gcc.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\compare_mmi.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\compare_msa.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\compare_neon.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\compare_neon64.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\compare_win.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\convert.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\convert_argb.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\convert_from.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\convert_from_argb.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\convert_jpeg.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\convert_to_argb.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\convert_to_i420.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\cpu_id.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\mjpeg_decoder.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\mjpeg_validate.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\planar_functions.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\rotate.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_any.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_argb.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_common.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_gcc.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_mmi.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_msa.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_neon.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_neon64.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_win.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\row_any.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\row_common.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\row_gcc.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\row_mmi.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\row_msa.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\row_neon.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\row_neon64.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\row_win.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\scale.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\scale_any.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\scale_argb.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\scale_common.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\scale_gcc.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\scale_mmi.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\scale_msa.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\scale_neon.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\scale_neon64.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\scale_win.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\yuv\source\video_common.cc">
+      <Filter>src\yuv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\xml\XML.cpp">
+      <Filter>src\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\xml\tinyxml\tinystr.cpp">
+      <Filter>src\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\xml\tinyxml\tinyxml.cpp">
+      <Filter>src\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\xml\tinyxml\tinyxmlerror.cpp">
+      <Filter>src\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\xml\tinyxml\tinyxmlparser.cpp">
+      <Filter>src\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sqlite\sqlite3.c">
+      <Filter>src\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\SOIL2\etc1_utils.c">
+      <Filter>src\SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\SOIL2\image_DXT.c">
+      <Filter>src\SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\SOIL2\image_helper.c">
+      <Filter>src\SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\SOIL2\SOIL2.c">
+      <Filter>src\SOIL2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\socket\PlatformSocket.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\socket\TCPSocket.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\socket\Private\Encryption.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\socket\Private\MemoryPool.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\socket\Private\Package.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\socket\Private\ThreadPool.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Tools\Tools.cpp">
+      <Filter>src\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\iconv\iconv\iconv.c">
+      <Filter>src\iconv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\iconv\iconv\relocatable.c">
+      <Filter>src\iconv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\iconv\iconv\localcharset.c">
+      <Filter>src\iconv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\guid\guid.cpp">
+      <Filter>src\guid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Tools\RecvFile.cpp">
+      <Filter>src\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Tools\SendFile.cpp">
+      <Filter>src\Tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\socket\PlatformSocket.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\socket\TCPSocket.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\socket\Private\Encryption.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\socket\Private\MemoryPool.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\socket\Private\Package.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\socket\Private\ThreadPool.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Tools\Tools.h">
+      <Filter>src\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\iconv\UTF8.h">
+      <Filter>src\iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\guid\guid.hpp">
+      <Filter>src\guid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Tools\RecvFile.h">
+      <Filter>src\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Tools\SendFile.h">
+      <Filter>src\Tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Application.mk">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\lib-builds.cmd">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\Makefile">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\ndk-builds.cmd">
+      <Filter>config</Filter>
+    </None>
+    <None Include="..\..\..\Android.mk">
+      <Filter>config</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\CMakeLists.txt">
+      <Filter>config</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

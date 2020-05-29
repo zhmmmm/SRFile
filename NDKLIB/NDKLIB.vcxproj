@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{115A9F8F-A9D6-4C84-B784-BF352E432AD6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NDKLIB</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>;../../../src/win32/include;../../../src/yuv/include;../../../src;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>;../../../src/win32/lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw32.lib;glew32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\guid\guid.cpp" />
+    <ClCompile Include="..\..\..\src\iconv\iconv\iconv.c" />
+    <ClCompile Include="..\..\..\src\iconv\iconv\localcharset.c" />
+    <ClCompile Include="..\..\..\src\iconv\iconv\relocatable.c" />
+    <ClCompile Include="..\..\..\src\socket\PlatformSocket.cpp" />
+    <ClCompile Include="..\..\..\src\socket\Private\Encryption.cpp" />
+    <ClCompile Include="..\..\..\src\socket\Private\MemoryPool.cpp" />
+    <ClCompile Include="..\..\..\src\socket\Private\Package.cpp" />
+    <ClCompile Include="..\..\..\src\socket\Private\ThreadPool.cpp" />
+    <ClCompile Include="..\..\..\src\socket\TCPSocket.cpp" />
+    <ClCompile Include="..\..\..\src\SOIL2\etc1_utils.c" />
+    <ClCompile Include="..\..\..\src\SOIL2\image_DXT.c" />
+    <ClCompile Include="..\..\..\src\SOIL2\image_helper.c" />
+    <ClCompile Include="..\..\..\src\SOIL2\SOIL2.c" />
+    <ClCompile Include="..\..\..\src\sqlite\sqlite3.c" />
+    <ClCompile Include="..\..\..\src\Tools\RecvFile.cpp" />
+    <ClCompile Include="..\..\..\src\Tools\SendFile.cpp" />
+    <ClCompile Include="..\..\..\src\Tools\Tools.cpp" />
+    <ClCompile Include="..\..\..\src\xml\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\..\src\xml\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\src\xml\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\src\xml\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\..\src\xml\XML.cpp" />
+    <ClCompile Include="..\..\..\src\yuv\source\compare.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\compare_common.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\compare_gcc.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\compare_mmi.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\compare_msa.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\compare_neon.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\compare_neon64.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\compare_win.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\convert.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\convert_argb.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\convert_from.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\convert_from_argb.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\convert_jpeg.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\convert_to_argb.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\convert_to_i420.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\cpu_id.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\mjpeg_decoder.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\mjpeg_validate.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\planar_functions.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\rotate.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_any.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_argb.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_common.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_gcc.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_mmi.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_msa.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_neon.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_neon64.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\rotate_win.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\row_any.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\row_common.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\row_gcc.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\row_mmi.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\row_msa.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\row_neon.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\row_neon64.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\row_win.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\scale.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\scale_any.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\scale_argb.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\scale_common.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\scale_gcc.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\scale_mmi.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\scale_msa.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\scale_neon.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\scale_neon64.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\scale_win.cc" />
+    <ClCompile Include="..\..\..\src\yuv\source\video_common.cc" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\guid\guid.hpp" />
+    <ClInclude Include="..\..\..\src\iconv\UTF8.h" />
+    <ClInclude Include="..\..\..\src\socket\PlatformSocket.h" />
+    <ClInclude Include="..\..\..\src\socket\Private\Encryption.h" />
+    <ClInclude Include="..\..\..\src\socket\Private\MemoryPool.h" />
+    <ClInclude Include="..\..\..\src\socket\Private\Package.h" />
+    <ClInclude Include="..\..\..\src\socket\Private\ThreadPool.h" />
+    <ClInclude Include="..\..\..\src\socket\TCPSocket.h" />
+    <ClInclude Include="..\..\..\src\Tools\RecvFile.h" />
+    <ClInclude Include="..\..\..\src\Tools\SendFile.h" />
+    <ClInclude Include="..\..\..\src\Tools\Tools.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Android.mk" />
+    <None Include="..\..\..\Application.mk" />
+    <None Include="..\..\..\lib-builds.cmd" />
+    <None Include="..\..\..\Makefile" />
+    <None Include="..\..\..\ndk-builds.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\CMakeLists.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
